@@ -42,8 +42,8 @@ var cube = new THREE.Mesh(geometry,material);
 
 scene.add(cube);
 
-cube.rotation.x = 1;
-cube.rotation.y = 1;
+cube.rotation.x = .5;
+cube.rotation.y = .3;
 
 camera.position.z = 3;
 
