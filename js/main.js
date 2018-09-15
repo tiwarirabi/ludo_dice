@@ -42,6 +42,9 @@ var cube = new THREE.Mesh(geometry,material);
 
 scene.add(cube);
 
+cube.rotation.x = 1;
+cube.rotation.y = 1;
+
 camera.position.z = 3;
 
 
@@ -89,28 +92,28 @@ document.onclick = function(){
 var rotateTo = function(faceNo){
     switch (faceNo) {
         case 1:
-            cube.rotation.x = 0;
-            cube.rotation.y = degToRadians(0);
+            cube.rotation.x = .5;
+            cube.rotation.y = degToRadians(0) +.3;
             break;
         case 2:
-            cube.rotation.x = 0;
-            cube.rotation.y = degToRadians(-90);
+            cube.rotation.x = .5;
+            cube.rotation.y = degToRadians(-90) +.3;
             break;
         case 3: 
-            cube.rotation.x = degToRadians(90);
-            cube.rotation.y = 0;
+            cube.rotation.x = degToRadians(90) + .5 ;
+            cube.rotation.y = 1.3;
             break;
         case 4:
-            cube.rotation.x = degToRadians(-90);
-            cube.rotation.y = 0;
+            cube.rotation.x = degToRadians(-90) + .5;
+            cube.rotation.y = 1.3;
             break;
         case 5:
-            cube.rotation.x = 0;
-            cube.rotation.y = degToRadians(90);   
+            cube.rotation.x = .5; 
+            cube.rotation.y = degToRadians(90) +.3;   
             break;
         case 6:
-            cube.rotation.x = 0;
-            cube.rotation.y = degToRadians(180);  
+            cube.rotation.x = .5;
+            cube.rotation.y = degToRadians(180)+.3;  
             break;
         default:
             break;
